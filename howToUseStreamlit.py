@@ -1,5 +1,6 @@
 import streamlit as st
 from langchain.prompts import PromptTemplate
+import time
 
 st.title("Hello world!")
 
@@ -34,3 +35,43 @@ st.selectbox("Choose your model",("GPT3","GPT4"))
 ## 새로운 부분만 refresh되는 것과 달리 전체가 재실행된다.
 
 value = st.slider("temperture",min_value=0.1, max_value=1.0)
+
+
+## sidebar 패턴
+with st.sidebar:
+    st.title("sidebar title")
+    st.text_input("xxx")
+
+## tab 패턴
+tab_one, tab_two, tab_three = st.tabs(["A","B","C"])
+
+with tab_one:
+    st.write("a")
+with tab_two:
+    st.write("b")
+with tab_three:
+    st.write("c")
+
+
+
+## streamlit이 가진 chat element 사용하기 : 
+# chat_message() - human, ai, asistant, user 등 입력할 수 있다.
+# chat_input(), chat_status()
+
+with st.chat_message("human"):
+    st.write("Hello")
+
+
+with st.chat_message("ai"):
+    st.write("How are you")
+
+with st.status("Embedding file...", expanded= True) as status:
+    time.sleep(2)
+    st.write("Getting the file")
+    time.sleep(2)
+    st.write("Embedding the tile")
+    time.sleep(2)
+    st.write("Caching the file")
+    status.update(label="Error", state="error") ## 어떻게 보여줄 것인지 
+
+st.chat_input("Send a message to a AI")
