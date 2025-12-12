@@ -26,3 +26,9 @@ source env/bin/activate
 7. .env 만들어서 ai key 입력
 7. git ignore에 /env와 .env 작성
 7. 쥬피터 사용을 위해서 .ipynb 확장자로 파일 생성
+
+-----
+프로젝트를 실행시키기 위해서는
+1. source /Users/dasom/Desktop/langchain-gpt/env/bin/activate
+2. cmd + shift + P -> Python: Select Interpreter -> langchain 설치된 환경 선택
+3. streamlit run Home.py
