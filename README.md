@@ -9,6 +9,7 @@ https://www.langchain.com/
 - https://www.pinecone.io/ : AI용 메모리 서비스
 - https://huggingface.co/ :  AI용 깃헙
 - https://fastapi.tiangolo.com/ : 프레임워크
+- https://ollama.com/ : open model을 로컬에서 사용할 수 있도록 하는 서비스 -> 로컬 다운로드 필요
 
 ---
 1. ChatGPT plus 결제 : plugin store 사용을 위해 결제 필요
