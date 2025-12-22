@@ -33,3 +33,11 @@ source env/bin/activate
 1. source /Users/dasom/Desktop/langchain-gpt/env/bin/activate
 2. cmd + shift + P -> Python: Select Interpreter -> langchain 설치된 환경 선택
 3. streamlit run Home.py
+
+-----
+SSL 오류 발생시(mac에서)
+1. spotlight에서 "install certificates.command를 찾은 후, 더블클릭으로 실행시켜준다.
+또는
+1. command 창에서 
+/Applications/Python\ 3.x/Install\ Certificates.command
+을 실행한다. 
