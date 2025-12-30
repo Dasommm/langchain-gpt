@@ -10,6 +10,11 @@ https://www.langchain.com/
 - https://huggingface.co/ :  AI용 깃헙
 - https://fastapi.tiangolo.com/ : 프레임워크
 - https://ollama.com/ : open model을 로컬에서 사용할 수 있도록 하는 서비스 -> 로컬 다운로드 필요
+- https://docs.ollama.com/ : ollama docs
+- https://platform.openai.com/docs/models : openAI model list
+- https://platform.openai.com/tokenizer : tokenizer
+- https://docs.langchain.com/: python langchain docs
+- https://docs.langchain.com/oss/python/integrations/tools: langchain에서 사용할 수 있는 toolkit list
 
 ---
 1. ChatGPT plus 결제 : plugin store 사용을 위해 결제 필요
