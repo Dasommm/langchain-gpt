@@ -46,3 +46,16 @@ SSL 오류 발생시(mac에서)
 1. command 창에서 
 /Applications/Python\ 3.x/Install\ Certificates.command
 을 실행한다. 
+
+
+-------
+1. brew install cloudflared
+2. fast api로 코드 작성
+3. uvicorn main:app --reload  ::: main 파일을 실행함
+4. fast api로 작성한 함수를 url로 호출하면 내용을 브라우저에서 확인 할 수 있다
+ex. http://127.0.0.1:8000/quote : 리턴 값이 json 형태로 브라우저에서 보여짐
+    http://127.0.0.1:8000/docs : swagger처럼 문서가 브라우저에서 보여짐
+    http://127.0.0.1:8000/openapi.json : api 설명을 위한 표준 schema를 볼 수 있음
+5. localhost 서버를 배포하기 위해서 cloudflared 실행 : url 요청이 들어오면 나의 로컬호스트로 요청을 리다이렉트 해달라는 의미 
+    cloudflared tunnel --url http://127.0.0.1:8000
+6. 실행이 되면 url을 제공해준다. : https://basically-experience-precipitation-dubai.trycloudflare.com/
